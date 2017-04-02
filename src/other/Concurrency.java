@@ -20,7 +20,7 @@ public class Concurrency {
 
 		for (int list : intList) {
 			System.out.println(list);
-			intList.remove(list);
+			intList.remove(2);
 		}
 	}
 
@@ -34,7 +34,7 @@ public class Concurrency {
 
 		for(int list : concList){
 			System.out.println(list);
-			concList.remove(list);
+			concList.remove(2);
 		}
 
 	}
