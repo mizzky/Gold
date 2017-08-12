@@ -1,16 +1,49 @@
 package other;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class Std_collection {
 	public static void main(String[] args) {
+
+		//HashMap
+
 		Map<Integer, String> m1 = new HashMap<>();
 		m1.put(2, "j");
 		m1.put(3, "z");
 		m1.put(1, "a");
 
-		for(Map.Entry<Integer, String> entry : m1.entrySet())
-			System.out.println(entry.getValue());
+		for(Map.Entry<Integer, String> entry : m1.entrySet()){
+			System.out.print(entry.getValue());
+		}
+
+		System.out.println();
+
+
+		//TreeMap
+		Map<Integer, String> m2 = new TreeMap<>();
+		m2.put(2, "j");
+		m2.put(3, "z");
+		m2.put(1, "a");
+
+
+		for(Map.Entry<Integer, String> entry : m2.entrySet()){
+			System.out.print(entry.getValue());
+		}
+		System.out.println();
+
+
+		//LinkedHashMap
+		Map<Integer, String> m3 = new LinkedHashMap<>();
+		m3.put(2, "j");
+		m3.put(3, "z");
+		m3.put(1, "a");
+
+
+		for(Map.Entry<Integer, String> entry : m3.entrySet()){
+			System.out.print(entry.getValue());
+		}
 	}
 }

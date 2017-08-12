@@ -16,7 +16,9 @@ public class August_03 {
 
 		Consumer<String> thanks = string -> System.out.println("Thank you " + string);
 		Function<String, String> function = name -> "Hi " + name;
-		Predicate<Integer> natural = num -> num > 0;
+		Predicate<Integer> natural = num -> num >0;
+
+
 
 		System.out.println(natural.test(100));
 
