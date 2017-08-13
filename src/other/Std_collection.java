@@ -1,5 +1,6 @@
 package other;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -45,5 +46,16 @@ public class Std_collection {
 		for(Map.Entry<Integer, String> entry : m3.entrySet()){
 			System.out.print(entry.getValue());
 		}
+
+		System.out.println();
+		System.out.println("-------------");
+
+		//arrays.sort
+		String[] countries = {"America", "Japan", "Korea"};
+		Arrays.sort(countries, (c1, c2) -> c1.compareTo(c2));
+
+		Arrays.stream(countries)
+				.forEach(country -> System.out.println(country + " "));
+
 	}
 }
